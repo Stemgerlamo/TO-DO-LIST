@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>TO DO LIST </h2>
+        <ol class="list">
+            <li>Wake up</li>
+            <li>Take bath</li>
+            <li>Take bike</li>
+        </ol>
+       <input type="text" class="input" value=""> <button class="add">add</button><br>
+       <input type="text" class="output" value="">  <button class="remove">remove</button>
+    </div>
+    <script>
+        let list=document.querySelector(".list");
+        const n=document.querySelector(".input");
+        const u=document.querySelector(".output");
+        const b=document.querySelector(".add")
+        const d=document.querySelector(".remove")
+        b.addEventListener('click',function (){
+            let e=document.createElement("li")
+            e.textContent=n.value;
+            list.appendChild(e);
+        });
+        d.addEventListener('click',function(){
+            const l=document.getElementsByTagName("li");
+            const le=l.length;
+            alert(list.childNode(u.value))
+            list.removeChild(l[u.value]);
+        })
+    </script>
+</body>
+</html>
