@@ -9,3 +9,6 @@ body{
     width:600px;
     height: 30vh;
 }
+#toDoList{
+    list-style-type: none;
+}
