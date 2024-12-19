@@ -1,14 +1,36 @@
-body{
-    background-color: #333
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 #container{
-    text-align: center;
-    background-color: #aab7b7;
-    margin-left:100px;
-    margin-top:30%;
-    width:600px;
-    height: 30vh;
+ padding: 10px;
+ width: 100%;
+ min-height: 100vh;
+ background:#544152;
 }
-#toDoList{
-    list-style-type: none;
+#list{
+    width: 100%;
+    max-width:540px;
+    background:#fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    text-align: center;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28;
+    width: 28px;
+    border-radius:50%;
+
 }
